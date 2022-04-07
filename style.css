@@ -1,0 +1,174 @@
+
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+nav#navbar {
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  width: 100%;
+  height: 3em;
+  background-color: #03141f;
+  z-index: 2;
+  border-bottom: 1px solid rgb(173, 245, 255);
+}
+
+a {
+  color: #fff;
+  font-size: 1.3em;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif, Cochin, Georgia, Times,
+    "Times New Roman", serif;
+  text-decoration: none;
+  padding: 0.5rem 0 0 1em;
+}
+
+section#welcome-section {
+  height: 100vh;
+  background: linear-gradient(
+    to bottom left,
+    rgb(28, 68, 92) 0%,
+    rgb(0, 5, 8) 100%
+  );
+}
+
+div#welcome-div {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  top: 30%;
+  word-wrap: break-word;
+}
+
+h1 {
+  color: #fff;
+  font-size: 3.5em;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif, "Times New Roman", Times, serif;
+  text-align: center;
+}
+
+p {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 1.3em;
+  text-align: center;
+  color: rgb(189, 236, 238);
+}
+
+section#projects {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  background: linear-gradient(#19854b, rgb(0, 22, 14));
+  padding: 3em;
+}
+
+h2#projects-header {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif,
+    Courier, monospace;
+  font-size: 3em;
+  grid-area: 1 / 1 / 2 / 3;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+div.project-name-container {
+  height: 6em;
+  background-color: #303841;
+  margin-top: -2rem;
+  border: 1px solid #808080;
+  border-bottom-left-radius: 0.8rem;
+  border-bottom-right-radius: 0.8rem;
+}
+
+article.project-tile {
+  margin: 0.8rem;
+}
+
+p.codepen {
+  width: 100%;
+}
+
+h3.project-name {
+  position: relative;
+  top: 1.5rem;
+  text-align: center;
+  color: #fff;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 125%;
+}
+
+iframe {
+  border-top-left-radius: 0.8rem;
+  border-top-right-radius: 0.8rem;
+}
+
+article#arizonavltcalc-website iframe {
+  border: 1px solid #808080;
+}
+
+#arizonavltcalc-website {
+  grid-area: 2 / 1 / 3 / 3;
+}
+
+#contact-section,
+footer {
+  background-color: #303841;
+}
+
+#contact-section {
+  height: 100vh;
+  margin-top: -2.66em;
+}
+
+div#contact-info-div {
+  text-align: center;
+  position: relative;
+  top: 35%;
+}
+
+h2#contact-header {
+  font-size: 3.2em;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: #fff;
+}
+
+div#contact-link-div a {
+  word-wrap: break-word;
+}
+
+div#contact-link-div {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  justify-content: center;
+  text-align: center;
+}
+
+footer {
+  height: 5em;
+  margin-bottom: -1.3em;
+  border-top: 0.7rem solid rgb(173, 245, 255);
+}
+
+#footer-text {
+  text-align: center;
+  padding-top: 1rem;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1rem;
+  color: azure;
+}
+
+@media (max-width: 768px) {
+  section#projects {
+    display: block;
+  }
+  div#contact-link-div {
+    grid-template-columns: auto;
+  }
+}
