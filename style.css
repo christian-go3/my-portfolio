@@ -164,8 +164,9 @@ div#contact-link-div a {
 div#contact-link-div {
   display: grid;
   grid-template-columns: repeat(5, auto);
-  width: 85%;
+  width: 90%;
   margin: auto;
+  justify-items: center;
 }
 
 .link2,
