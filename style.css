@@ -1,5 +1,3 @@
-
-
 body {
   box-sizing: border-box;
   margin: 0;
@@ -61,20 +59,32 @@ p {
   color: rgb(189, 236, 238);
 }
 
-section#projects {
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-  background: linear-gradient(#19854b, rgb(0, 22, 14));
-  padding: 3em;
+main {
+  position: relative;
+  bottom: 2.5em;
+  background: linear-gradient(#0c88c6, rgb(0, 16, 22));
+}
+
+div.projects-header-container {
+  position: relative;
+  top: 3em;
+  height: 8em;
+  margin-bottom: 2rem;
 }
 
 h2#projects-header {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif,
     Courier, monospace;
   font-size: 3em;
-  grid-area: 1 / 1 / 2 / 3;
   text-align: center;
   color: rgb(255, 255, 255);
+}
+
+section#projects {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 0.1rem;
+  margin: 0 auto;
 }
 
 div.project-name-container {
@@ -87,7 +97,7 @@ div.project-name-container {
 }
 
 article.project-tile {
-  margin: 0.8rem;
+  margin: 0.7rem;
 }
 
 p.codepen {
@@ -100,7 +110,14 @@ h3.project-name {
   text-align: center;
   color: #fff;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 125%;
+  font-size: 1.3rem;
+}
+
+h3.project-name a {
+  font-size: 1.5rem;
+  margin: auto;
+  padding: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 iframe {
@@ -123,7 +140,7 @@ footer {
 
 #contact-section {
   height: 100vh;
-  margin-top: -2.66em;
+  margin-top: -5.2em;
 }
 
 div#contact-info-div {
@@ -141,13 +158,22 @@ h2#contact-header {
 
 div#contact-link-div a {
   word-wrap: break-word;
+  font-size: 1.2rem;
 }
 
 div#contact-link-div {
   display: grid;
   grid-template-columns: repeat(5, auto);
-  justify-content: center;
-  text-align: center;
+  width: 85%;
+  margin: auto;
+}
+
+.link2,
+.link4,
+.link6,
+.link8,
+.link10 {
+  text-align: left;
 }
 
 footer {
@@ -156,19 +182,26 @@ footer {
   border-top: 0.7rem solid rgb(173, 245, 255);
 }
 
-#footer-text {
+p#footer-text {
   text-align: center;
   padding-top: 1rem;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif, Courier, monospace;
   font-size: 1rem;
   color: azure;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   section#projects {
     display: block;
   }
+
   div#contact-link-div {
     grid-template-columns: auto;
+    width: 12em;
+  }
+
+  h2#projects-header {
+    font-size: 2.3em;
   }
 }

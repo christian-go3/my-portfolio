@@ -1,48 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <base href="index.html" target="_blank" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Christian Olono Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/a11a337309.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta name="description" content="My personal web development portfolio" />
+    <meta name="author" content="Christian Olono" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <base href="index.html" target="_blank" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Christian Olono Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="https://kit.fontawesome.com/a11a337309.js" crossorigin="anonymous"></script>
-  <meta name="description" content="My personal web development portfolio" />
-  <meta name="author" content="Christian Olono" />
-</head>
-
-<body>
-   <!-- Nav -->
+  <body>
+    <!-- Nav -->
     <nav id="navbar">
-      <a href="#welcome-section" class="nav-link">About</a>
-      <a href="#projects" class="nav-link">Work</a>
-      <a href="#contact-section" class="nav-link">Contact</a>
+      <a href="#welcome-section" target="_self" class="nav-link">About</a>
+      <a href="#main" target="_self" class="nav-link">Work</a>
+      <a href="#contact-section" target="_self" class="nav-link">Contact</a>
     </nav>
 
     <!-- Welcome Section -->
     <section id="welcome-section">
       <div id="welcome-div">
         <h1>Welcome, I'm Christian Olono</h1>
-        <p>a Web Developer in progress!</p>
+        <p>a Web Developer!</p>
       </div>
     </section>
 
     <!-- Main -->
-    <main id="projects">
+    <main id="main">
       <!-- Projects section -->
-      <section id="projects">
+      <div class="projects-header-container" id="projects-header-container">
         <h2 id="projects-header">These are my projects</h2>
-
+      </div>
+      <section id="projects">
         <!-- ArizonaVLTCalc.com website-->
         <article class="project-tile" id="arizonavltcalc-website">
           <iframe
             height="500"
             style="width: 100%"
-            scrolling="no"
-            title="ArizonaVLTCalc.com"
-            src="https://codepen.io/christian-go3/embed/preview/XWgVOxa?default-tab=result&theme-id=dark"
+            scrolling="yes"
+            title="arizonavltcalc.com"
+            src="https://arizonavltcalc.com"
             frameborder="no"
             loading="lazy"
             allowtransparency="true"
@@ -55,7 +58,7 @@
             >) on <a href="https://codepen.io">CodePen</a>.
           </iframe>
           <div class="project-name-container">
-            <h3 class="project-name">ArizonaVLTCalc.com</h3>
+            <h3 class="project-name"><a href="https://www.arizonavltcalc.com" >arizonavltcalc.com</a></h3>
           </div>
         </article>
 
@@ -165,30 +168,38 @@
       </section>
 
       <!-- Contact Section -->
-      <section id="contact-section">
-        <div id="contact-info-div">
-          <h2 id="contact-header">Let's collab...</h2>
-          <div id="contact-link-div">
-            <a
-              href="https://www.freecodecamp.org/christian_go3"
-              target="_blank"
-              id="profile-link"
-              ><i class="fab fa-free-code-camp"></i> freeCodeCamp</a
-            >
-            <a href="https://github.com/christian-go3" target="_blank"
-              ><i class="fab fa-github-square"></i> GitHub</a
-            >
-            <a href=""><i class="fab fa-twitter-square"></i> Twitter</a>
-            <a href=""><i class="fas fa-at"></i> Email me</a>
-            <a href=""><i class="fas fa-mobile"></i> Call me</a>
-          </div>
-        </div>
-      </section>
     </main>
+    <section id="contact-section">
+      <div id="contact-info-div">
+        <h2 id="contact-header">Let's collab...</h2>
+        <div id="contact-link-div">
+          <a
+            href="https://www.freecodecamp.org/christian_go3"
+            class="link2"
+            target="_blank"
+            id="profile-link"
+          >
+            <i class="fab fa-free-code-camp"></i>
+            freeCodeCamp</a
+          >
+          <a
+            href="https://github.com/christian-go3"
+            class="link4"
+            target="_blank"
+            ><i class="fab fa-github-square"> </i> GitHub</a
+          >
+          <a href="#" class="link6">
+            <i class="fab fa-twitter-square"></i>
+            Twitter</a
+          >
+          <a href="mailto:devr.cgo3@gmail.com" class="link8"><i class="fas fa-at"></i> Email me</a>
+          <a href="#" class="link10"><i class="fas fa-mobile"></i> Text me</a>
+        </div>
+      </div>
+    </section>
 
     <footer>
-      <p id="footer-text">&copy; Developed by Christian GO</p>
+      <p id="footer-text">&copy; Developed by Christian Olono</p>
     </footer>
-</body>
-
+  </body>
 </html>
