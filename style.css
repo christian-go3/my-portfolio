@@ -1,5 +1,8 @@
-body {
+* {
   box-sizing: border-box;
+}
+
+body {
   margin: 0;
 }
 
@@ -17,21 +20,57 @@ nav#navbar {
 }
 
 .nav-link {
-  padding: 0.7rem;
+  width: 100%;
+  color: #fff;
+  font-size: 1em;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif, Cochin, Georgia, Times,
+    "Times New Roman", serif;
+  text-decoration: none;
+  text-align: center;
+  padding-top: 0.7rem;
+  border: none;
+  background-color: #03141f;
 }
 
 .nav-link:hover {
   background-color: #153548;
 }
 
-a {
-  color: #fff;
-  font-size: 1.3em;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif, Cochin, Georgia, Times,
-    "Times New Roman", serif;
+.certs-dropdown-content {
+  display: none;
+  width: 100%;
+  background-color: #03141f;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  border-bottom-left-radius: 0.3rem;
+  border-bottom-right-radius: 0.3rem;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  border-top: 1px solid rgb(173, 245, 255);
+  border-bottom: 1px solid rgb(173, 245, 255);
+}
+
+.certs-link {
+  display: block;
   text-decoration: none;
-  padding: 0.5rem 0 0 1em;
+  text-align: center;
+  font-size: 1rem;
+  padding: 0.7rem;
+  color: rgb(189, 236, 238);
+}
+
+.certs-link:hover {
+  background-color: #153548;
+}
+
+.certs-link:last-child {
+  border-bottom-left-radius: 0.3rem;
+  border-bottom-right-radius: 0.3rem;
+}
+
+.certs-dropdown:hover > .certs-dropdown-content {
+  display: block;
 }
 
 section#welcome-section {
@@ -115,20 +154,22 @@ p.codepen {
   width: 100%;
 }
 
-h3.project-name {
+.project-name {
   position: relative;
-  top: 1.5rem;
+  top: 1.8rem;
   text-align: center;
   color: #fff;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 1.3rem;
 }
 
-h3.project-name a {
-  font-size: 1.5rem;
+.project-name a {
+  font-size: 1.3rem;
   margin: auto;
   padding: 0;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-decoration: none;
+  color: #fff;
 }
 
 #arizonavltcalc-website {
@@ -232,4 +273,9 @@ p#footer-text {
   h2#projects-header {
     font-size: 2.3em;
   }
+
+  .project-name {
+    font-size: 1.1em;
+  }
+  
 }
